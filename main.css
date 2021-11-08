@@ -1,0 +1,72 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background: #bdc3c7;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2c3e50, #bdc3c7);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+h1 {
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    font-style: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.btn-NO {
+    margin-top: 3rem;
+    padding: .375rem .75rem;
+    border: 1px solid #067dfd;
+    border-radius: .25rem;
+    color: rgb(0, 0, 0);
+    font-family: 'Otomanopee One', sans-serif;
+    font-size: 1rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out;
+}
+
+.btn-borde:hover,
+.btn-borde:active,
+.btn-borde:focus {
+    color: rgb(0, 0, 0);
+    background-color: #000000;
+}
+
+.btn-SI {
+    margin-top: 3rem;
+    padding: .375rem .75rem;
+    border: 1px solid #ff00b3;
+    border-radius: .25rem;
+    color: rgb(0, 0, 0);
+    font-family: 'Otomanopee One', sans-serif;
+    font-size: 1rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out;
+}
+
+.btn-borde:hover,
+.btn-borde:active,
+.btn-borde:focus {
+    color: rgba(255, 0, 128, 0.774);
+    background-color: #da0000;
+}
+
+.centrar {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.centrar div {
+    text-align: center;
+}
